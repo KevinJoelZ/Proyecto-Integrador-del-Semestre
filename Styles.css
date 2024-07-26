@@ -51,7 +51,7 @@ section h2 {
     margin-top: 0;
 }
 
-img {
+img, video {
     max-width: 100%;
     height: auto;
     display: block;
@@ -63,6 +63,47 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
 }
 
 /* Responsive Styles */
@@ -80,10 +121,18 @@ footer {
     section {
         padding: 40px;
     }
+
+    .info-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(min-width: 1024px) {
     main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .info-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
