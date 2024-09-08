@@ -1,0 +1,109 @@
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #cad5df;
+    text-align: justify;
+    margin: 30px; /* Margen alrededor del contenido de la página */
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 1px; /* Espacio interno alrededor del contenido del contenedor */
+    color: rgb(243, 243, 243);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #168b9b;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 0px; /* Margen inferior para separar del contenido siguiente */
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+nav ul li {
+    float: left;
+    margin: auto;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: auto;
+}
+
+nav ul li a:hover {
+    background-color: #d4fffc;
+    border-radius: 05px;
+}
+
+header {
+    background: url('images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #054652;
+    padding: 20px 0; /* Reducido para disminuir la altura del header */
+    border-radius: 15px;
+    margin-bottom: 10px; /* Margen inferior para separar del contenido siguiente */
+}
+
+h1, h2 {
+    margin-bottom: 5px;
+    margin-top: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+
+pre {
+    background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 15px;
+    overflow-x: auto;
+    margin-bottom: 100px; /* Margen inferior para separar del contenido siguiente */
+    font-size: 20px;
+}
+
+footer {
+    padding: 1px 0; /* Reducido para disminuir la altura del footer */
+    border-radius: 15px;
+    margin-top: 1px;
+    margin-bottom: 2px; /* Margen inferior para separar del contenido siguiente */
+    font-size: 20px;
+}
+
+.video-container {
+    margin-bottom: 10px; /* Margen inferior para separar de otros contenidos */
+}
+
+.video-container iframe {
+    margin-bottom: 05px; /* Añade un margen inferior de 50px entre los iframes */
+    border-radius: 20px;
+    margin-left: 90px;
+    margin-top: 155px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+

@@ -1,0 +1,116 @@
+/* CSS existente */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #cad5df;
+    text-align: justify;
+    margin: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 1px; /* Espacio interno alrededor del contenido del contenedor */
+    color: rgb(243, 243, 243);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.img1 {
+    display: block;        /* Convierte la imagen en un elemento de bloque */
+    margin: 0 auto;        /* Centra la imagen horizontalmente */
+    max-width: 50%;       /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;          /* Mantiene la proporción de la imagen */
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 20px 24px 10px rgba(0, 0, 0, 0.5);  /* Sombra aplicada */
+}
+
+/* Resto del CSS */
+nav {
+    background-color: #168b9b;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 0px;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+nav ul li {
+    float: left;
+    margin: auto;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: auto;
+}
+
+nav ul li a:hover {
+    background-color: #d4fffc;
+    border-radius: 5px;
+}
+
+header {
+    background: url('images/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #054652;
+    padding: 20px 0;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin-bottom: 5px;
+    margin-top: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+
+pre {
+    background-color: #eeeeee;
+    padding: 5px;
+    border-radius: 15px;
+    overflow-x: auto;
+    margin-bottom: 40px;
+    font-size: 17px;
+    width: 40%; /* Ajusta el ancho a un 80% del contenedor padre */
+    box-shadow: 20px 24px 10px rgba(0, 0, 0, 0.5);  /* Sombra aplicada */
+}
+
+footer {
+    padding: 1px 0; /* Reducido para disminuir la altura del footer */
+    border-radius: 15px;
+    margin-top: 1px;
+    margin-bottom: 10px; /* Reducido el margen inferior para reducir el espacio debajo del footer */
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
